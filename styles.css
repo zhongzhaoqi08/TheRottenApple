@@ -1,0 +1,531 @@
+body{
+	font-family: 'Eczar';
+	text-align: center;
+	background: white;
+	margin:0;
+	padding:0;
+
+
+}
+
+h1{
+	color: white; 
+}
+h3{
+
+	color: white; 
+}
+
+a:link {
+    color:#4495ff;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color:#4495ff;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #1971e5;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color:#1971e5;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+.openframe{
+       text-align: center;
+       height:100vh;
+       width:100%;
+       top:0;
+       left:0;
+       position: relative;
+    
+}
+
+
+.openframe video{
+
+ /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  z-index: -2;
+  }
+
+-webkit-full-screen {
+   width: 100%;
+   height: 100%;
+   max-height: 100%;
+}
+/*
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.5);
+    display: block;
+}
+*/
+
+@media only screen and (min-width: 600px) {
+     /* Add your Mobile Styles here */
+   #openframe_title{  
+	margin-top:25vh;
+	float:center;
+	width:70vw;
+	margin-left:15vw;
+	margin-right: 0;
+    }
+    h1{font-size: 8vh;
+    	font-weight:600;
+    }
+    h3{
+    	font-size:5vh;
+    	line-height: 120%;
+    	font-weight: 200;
+    }
+    h4{
+      margin:0;
+      font-size:4vh;
+      float: left;
+      font-family:'Eczar';
+      color:white;
+      display: inline;
+     }
+
+     .footer h5{
+        font-family: 'Roboto';
+        font-size:2vh;
+        text-align:left;
+        color: white;
+        display:block;
+        letter-spacing: 1px;
+    }
+    #openframe_logo{
+      width:auto;
+    	height:10%;
+    	margin-top: 5%;
+      margin-left:-5%;
+    }
+/*     #byline_container{
+     	padding-top: 10vh;
+     }*/
+    .text_container{
+      width:70%;
+      padding-left: 15%;
+      padding-right:15%;
+      padding-top: 2%;
+      padding-bottom: 2%;  
+      position: relative;
+      background-color: white;
+    }
+    .text{
+      line-height: 2;
+      text-align: left;
+      font-family: 'Roboto';
+      font-size: 2.5vh;
+    }
+
+    .video_container{
+  width:70%;
+  margin-left:15%;
+  height:auto;
+  position: relative;
+  left:0;
+  top:0;
+
+}
+
+.video_container video{
+   width:100%;
+   height:auto;
+  z-index: -2;
+  }
+
+     .headline{
+      line-height: 2;
+      text-align: left;
+      font-family: 'Eczar';
+      font-weight: 700;
+      font-size: 3.5vh;
+    }
+
+    .soundButton{
+       position:absolute;
+       bottom:1vh;
+       right:1vw;
+    }
+
+    #set-height {
+       display: block;
+       width: 100%;
+       background-color: #FCFCFC;
+       /*  position: relative;*/
+    }
+
+    #v0 {
+       width: 80%;
+       left:10%;
+       top:5%;
+    }
+
+    #v0.stick {
+       position: fixed;
+       top: 5%;
+       left:10%;
+       width: 80%;
+    }
+    img{
+      width: 70%;
+    }
+
+    iframe{
+        width:70vw;
+        height:70vh;
+  
+      /*  border:none;*/
+    }
+
+    .footer img{
+       float:right;
+       display: inline;
+       width:30%; 
+       height:auto;
+     }
+}
+
+
+
+@media only screen and (max-width:600px) {
+     /* Add your Mobile Styles here */
+    #openframe_title{
+      margin-top:20%;
+      width:70%;
+	    margin-left:15%;
+	    margin-right: 0;
+
+     }
+     h1{
+      margin-top: 40%;
+     	font-size: 5vh;
+     }
+     h3{
+     	font-size:3vh;
+      margin-top:40%;
+     }
+     h4{
+      font-size:4vh;
+      font-family:'Eczar';
+      color:white;
+      display:inline;
+      margin:auto;
+     }
+     .footer h5{
+        font-family: 'Roboto';
+        font-size:2vh;
+        text-align:center;
+        color: white;
+        display:block;
+        letter-spacing: 0px;
+        line-height: 1.5;
+
+       }
+
+    .footer img{
+       margin:auto;
+       display: block;
+       width:70%; 
+       height:auto;
+     }
+     #openframe_logo{
+	    width:auto;
+	    height:7%;
+	    margin-top: 5%;
+      margin-left: -3%;
+     }
+    .text_container{
+      width:80%;
+      background-color: white;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 3%;
+      padding-bottom: 3%;     
+      position: relative;
+     }
+    .text{
+      line-height: 1.8;
+      text-align: left;
+      font-family: 'Roboto';
+      font-size:3vh;
+    }
+    .video_container{
+        width:80%;
+        margin-left:10%;
+        height:auto;
+        position: relative;
+        left:0;
+        top:0;
+
+     }
+
+    .video_container video{
+         width:100%;
+         height:auto;
+         z-index: -2;
+     }
+    .headline{
+      line-height: 2;
+      text-align: left;
+      font-family: 'Eczar';
+      font-weight: 700;
+      font-size: 3.5vh;
+    }
+    .soundButton{
+       position:absolute;
+       bottom:0.3vh;
+       right:1vw;
+    }
+    #set-height {
+       display: block;
+       width: 100%;
+       background-color: #FCFCFC;
+       /*  position: relative;*/
+    }
+
+    #v0 {
+       width: 90%;
+       left:3%;
+        margin-top:40%;
+    }
+
+    #v0.stick {
+       position: fixed;
+       top: 0%;
+       left:3%;
+       width: 90%;
+    }
+    img{
+      width:80%;
+
+    }
+    iframe{
+        width:80vw;
+        height:80vh;
+  
+      /*  border:none;*/
+    }
+
+}
+
+
+
+
+
+
+.svg
+{
+    position: absolute;
+    vertical-align: center;
+	width: 50px;
+	z-index: +2;
+
+
+	animation: chevronAnimation 4s ease-in-out 0s infinite;
+}
+.svg_container{
+	bottom:5vh;
+	left:46vw;
+	z-index:+100;
+	position: absolute;
+}
+
+path
+{    
+	fill: white;
+	animation: chevronAnimation 2s ease-in-out 0s infinite;
+}
+rect{
+	fill:red;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes example {
+    from {fill: red;}
+    to {fill: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {fill: red;}
+    to {fill: yellow;}
+}
+
+
+
+
+/**
+ * Simple keyframes animation for the chevron on the first slide
+ */
+@keyframes chevronAnimation {
+	0% {
+		/*transform: translate(0,0) scale(1.0,1.0);*/
+
+		transform: translate(0,0) scale(0.6,0.6)
+
+	}
+	40%{
+		transform:translate(,-5px, -30px) scale(1.0,1.0);
+	}
+	50% {
+		/*transform: translate(5px,5px) scale(0.8,0.8);*/
+	}
+	60%{
+		transform: translate(-3px, 15px) scale(0.8,0.8);
+	}
+
+	100% {
+		transform: translate(0,0) scale(0.6,0.6);
+	}
+}
+
+@-webkit-keyframes chevronAnimation{
+	0% {
+		transform: translate(0,0) scale(1.0,1.0);
+	}
+	50% {
+		transform: translate(5px,5px) scale(0.8,0.8);
+	}
+	100% {
+		transform: translate(0,0) scale(1.0,1.0);
+	}
+}
+
+
+#byline_container{
+    width: 100%;
+    height:40vh;
+    position: relative;
+    background-color:#f2f2f2;
+
+}
+#byline{
+	width: 80vw;
+	color:#333;
+	padding-left: 10vw;
+	position:absolute;
+	margin: auto;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+
+-webkit-full-screen {
+   width: 100%;
+   height: 100%;
+   max-height: 100%;
+}
+
+.soundButton{
+  position:absolute;
+
+}
+.soundButton img{
+  height:5vh;
+  width:5vw;
+/*  background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+
+input.toggle {
+  display: none;
+}
+
+.unmute img {
+  display: none;
+}
+
+input.toggle:checked ~ .unmute img {
+  display: initial;
+}
+
+input.toggle:checked ~ .mute img {
+  display: none;
+}
+/*#set-height {
+  display: block;
+}
+#v0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}*/
+
+p font-family helvetica {
+  font-size: 24px;
+}
+
+.footer{
+  width:100%;
+  height:40%;
+  background: #232323;
+  margin-top: 5%;
+  margin-bottom: -5%;
+}
+.footer-content{
+  width:70%;
+  padding-top: 5%;
+  padding-left: 15%;
+}
+.title-line{
+  overflow: auto;
+}
+
+
+.footer a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.footer a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #1971e5;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.footer a:active {
+    color:#1971e5;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+
+

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Nicole Zhaoqi Zhong">
+
+	<title>The Rotten Apple</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="styles.css">
+	<link href="demo.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Eczar' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="ScrollTrigger.min.js"></script>
+
+
+    <script>
+        window.counter = function() {
+	    // this refers to the html element with the data-scroll-showCallback tag
+	    var span = this.querySelector('span');
+	    var current = parseInt(span.textContent);
+
+	    span.textContent = current + 1;
+        };
+
+        document.addEventListener('DOMContentLoaded', function(){
+        var trigger = new ScrollTrigger({
+	    addHeight: true
+        });
+        });
+
+     </script>
+
+</head>
+<body>
+<div class="openframe" style="text-align:center;">
+        <video autoplay muted loop id="DroneShot">
+        <source src="OpenFrame.mp4" type="video/mp4">
+        </video>
+  	    <img id="openframe_logo" src="logo 2.png" alt="logo"  >
+  <div id="openframe_title"> 
+  	    <h1>The Rotten Apple</h1>
+  	    <h3>The mismanagement of the organics recycling program in New York City </h3>
+  </div>
+  <div class="svg_container" style="text-align:center;z-index:+100;">
+  <svg viewBox="0 0 60 60" style="width:10vw; height:6vh; min-width:60%; min-height:60%">
+		<path d="M52.254 18.327c0.816-0.804 2.127-0.804 2.937 0s0.813 2.103 0 2.907l-23.724 23.49c-0.81 0.804-2.121 0.804-2.937 0l-23.724-23.49c-0.81-0.804-0.81-2.103 0-2.907 0.813-0.804 2.127-0.804 2.937 0l22.257 21.423 22.254-21.423z"></path>
+		<!-- <rect width="50" height="50" x="0" /> -->
+	</svg> 
+  </div>
+</div>
+
+<div id="byline_container">
+  	 <h3  id="byline" data-scroll="toggle(.fromBottomIn, .fromTopOut) once:true" >This is
+a collaborative investigation by NYU Journalism, WNYC and gothamist.
+</h3>
+</div>
+
+<div class="text_container">
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">It was always an ambitious goal: provide organics recycling to all New Yorkers by the end of 2018. But after spending millions on a five-year pilot program, the Department of Sanitation (DSNY) is halting their expansion plans until further notice. Currently, about 3.5 million New Yorkers live in the areas participating in the program, but only about 3% of the organic waste they create is actually collected by the city. Yet, despite the limited scope of the pilot, many facets of the program are becoming unwieldy, chief among them an inefficient, expensive collection system and processing facilities in NYC that are already close to full capacity. 
+     </p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Kathryn Garcia, Commissioner for DSNY, said the city is “evaluating its current service with the goal of increasing efficiencies and streamlining the program.” Garcia has not provided any concrete steps for overcoming these challenges or a new timetable for completing the rollout, but a fully implemented organics recycling program is a cornerstone of the city’s goal of sending zero waste to landfills by 2030.
+     </p>	
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Over the past four months, a team of NYU Journalism students, in collaboration with WNYC and Gothamist, have been investigating the city’s residential organics collection program. We talked to over 30 residents in three different neighborhoods as well as scientists, policy makers, environmental activists, city employees and former high-ranking officials of the sanitation department.
+     </p> 
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">What we found is a program suffering from poor planning, high costs and inadequate community outreach. Critics say the project is driven by political will and plagued by poor execution. “This whole program was thrown in place. It wasn’t thought out,” said Robert Lange, a former director of the recycling program at the sanitation department. Norman Steisel, commissioner of sanitation from 1978 to 1986, echoed that opinion:
+     </p> 
+
+</div>
+
+
+<div class="video_container">
+
+      <video data-scroll="addHeight"  data-scroll-showCallback="play();" data-scroll-hideCallback="pause();" muted id="DeBrasio" class="video" >
+
+        <source src="Soundbite1_Steisel.mp4" type="video/mp4">
+      </video> 
+
+     <div class="soundButton">
+    <input type="checkbox" name="un-mute" id="un-mute3" class="toggle">
+              <label for="un-mute3" class="unmute"> 
+              <img src="Speaker_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+              </label>
+               <label for="un-mute3" class="mute"> 
+               <img src="Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+               </label>
+      </div>
+
+</div>
+
+<div class="text_container">
+   <p  class="headline" data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Good Intentions </p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">On the surface, organics collection makes a lot of sense. Organics currently comprise 34 percent of all waste New Yorkers produce. Residents throw their apple cores and leftover Chinese takeout into the brown bins provided by the city and processing facilities turn the trash into compost or clean energy. But dig a little deeper, and the story gets more complicated. 
+     </p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Organics waste collection was introduced by Mayor Michael Bloomberg in 2013 and expanded under Mayor Bill de Blasio. The program is a key component of de Blasio’s goal that close to 100 percent of New Yorkers’ waste will be diverted from landfills and recycled into usable materials by 2030. Ron Gonen, the former Deputy Commissioner of Sanitation, Recycling, and Sustainability said that when the original timeline was created, it was intentionally over-ambitious. “New York City is so massive and so complex, when it comes to it’s management, that it’s almost impossible to say ‘We’re starting this program and here’s this timeline of when it’s going to be finished.’ When you’re in government, you have to set aggressive goals. And if you only get 20 percent of the way there, or 50 percent of the way there - that’s okay.”
+     </p>
+
+    <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">While there are around 100 drop-off sites throughout the city, currently, 3.5 million New Yorkers, the bulk of participants, live in areas served by the curbside program. Their buildings received one of 334,600 brown bins with a kitchen pail and instructions attached. Residents are instructed to use the bins for food and yard waste and sanitation trucks collect everything at least weekly. All participation is voluntary and currently there is no fine if residents don’t participate. 
+     </p>
+
+    <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Manhattan and Community Boards 1-7 and 9 in the Bronx are under an opt-in system. Their landlords must request the brown bins from the DSNY.
+     </p>
+
+    <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">According to the Department of Sanitation, in 2017 only about 3 percent of the organics waste residents created was actually collected. This is largely because they continued putting organic waste into their regular trash bins. The other 97 percent of residents’ food scraps and yard waste was still sent to landfills. In comparison, 51 percent of paper, metal, glass and plastic is collected. 
+     </p>
+</div>
+
+
+
+<div id="set-height">
+<!-- <div id="v0_wrapper"> -->
+<video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload"><!-- <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="https://www.html5rocks.com/tutorials/video/basics/Chrome_ImF.webm"></source>
+<source type="video/ogg; codecs=&quot;theora, vorbis&quot;" src="https://www.html5rocks.com/tutorials/video/basics/Chrome_ImF.ogv"></source> -->
+<source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="capture_rate_infographic.mp4"></source>
+  <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+</video>
+</div>
+<script>
+// var vid = document.getElementById("v0");
+// vid.addEventListener("loadedmetadata", function() {
+//     alert("Meta data for video loaded");
+// });
+ </script> 
+<script>
+
+        // window.onload=function(){
+      // window.scrollBy(0, 2560);
+      //  var frameNumber = 0, // start video at frame 0
+      //    // lower numbers = faster playback
+      //    playbackConst = 700,
+        
+      //  // get page height from video duration
+      //   setHeight = document.getElementById("set-height");
+      // var vid = document.getElementById("v0");
+      //   vid.addEventListener("loadedmetadata", function() {
+      //   // alert("Meta data for video loaded");
+      //   setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+      //   // alert(document.getElementById("set-height").style.height);
+      //   });
+        
+        // select video element
+        
+        // alert(vid.readyState) ;
+
+var frameNumber = 0, // start video at frame 0
+    // lower numbers = faster playback
+    playbackConst = 500, 
+    // get page height from video duration
+    setHeight = document.getElementById("set-height"), 
+    // select video element         
+    vid = document.getElementById('v0'); 
+    // var vid = $('#v0')[0]; // jquery option
+
+// dynamically set the page height according to video length
+vid.addEventListener('loadedmetadata', function() {
+  // setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+  setHeight.style.height = vid.duration * playbackConst + "px";
+});
+
+
+// Use requestAnimationFrame for smooth playback
+function scrollPlay(){  
+  // var frameNumber  = window.pageYOffset/playbackConst;
+  var window_top = $(window).scrollTop();  
+  var div_top = $('#set-height').offset().top; 
+  var frameNumber = (window_top - div_top)/playbackConst;
+  vid.currentTime  = frameNumber;
+  window.requestAnimationFrame(scrollPlay);
+
+}
+
+window.requestAnimationFrame(scrollPlay);
+// Use requestAnimationFrame for smooth playback
+// function scrollPlay(){  
+//   var frameNumber  = window.pageYOffset/playbackConst;
+//   vid.currentTime  = frameNumber;
+//   window.requestAnimationFrame(scrollPlay);
+
+// }
+
+// window.requestAnimationFrame(scrollPlay);
+
+
+function sticky_relocate() {  
+    var window_top = $(window).scrollTop();  
+    var div_top = $('#set-height').offset().top;  
+    var div_bottom = $('#set-height').height() +div_top;
+
+    if (window_top > div_top && window_top < div_bottom) {  
+        $('#v0').addClass('stick');  
+        // console.log("window_top:"+window_top);
+        // console.log("div_top:"+div_top);
+        // console.log("div_bottom:"+div_bottom);
+
+    } else {  
+        $('#v0').removeClass('stick');  
+    }  
+}  
+
+
+
+$(function () {  
+    $(window).scroll(sticky_relocate);  
+    sticky_relocate(); 
+});
+
+</script>
+</div>  
+
+<div class="text_container">
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">The sanitation department said the low numbers reflect that the organics program is still in its pilot stage. But according to the Citizen Budget Commission, an independent non-profit, the low rate of collection drives up the cost of the program. Collection trucks cost the same amount of money to operate even if they are only partially full of waste, and the CBC estimates that organics collection costs three times more than picking up regular trash. And there is a catch-22. Currently, capacity at the Department of Sanitation’s organic waste recycling facilities is limited. If residents were to collect more food scraps and yard waste, the city would quickly run out of room to handle it.
+     </p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">And this is not the only city recycling program struggling to increase collection rates.
+     </p> 
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">For 2017, DSNY set an overall goal to recycle 23 percent of all possible reusable materials, but was only able to recycle 17.4 percent.
+     </p> 
+
+</div>
+
+<img src="still_image.JPG" alt="Brown Bin in New York City" >
+
+
+<div class="text_container">
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Over the past five years, the Department of Sanitation has expanded the organics recycling program to 24 community boards in all five boroughs. Many residents we spoke with said the rollout was poorly communicated and in some cases confusing.  </p>
+</div>
+
+<div class="video_container">
+
+      <video data-scroll="addHeight"  data-scroll-showCallback="play();" data-scroll-hideCallback="pause();" muted id="DeBrasio" class="video" >
+
+        <source src="voxpop 2 final.mp4" type="video/mp4">
+      </video> 
+
+     <div class="soundButton">
+    <input type="checkbox" name="un-mute" id="un-mute4" class="toggle">
+              <label for="un-mute4" class="unmute"> 
+              <img src="Speaker_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+              </label>
+               <label for="un-mute4" class="mute"> 
+               <img src="Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+               </label>
+      </div>
+</div>
+
+<div class="text_container">
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Organic waste, like bad vegetables, fruits, old pizza, yard waste and soiled paper is supposed to go into the brown bins. But when we spoke to residents, many were confused about what belongs in brown bins. </p>
+</div>
+
+<div class="video_container">
+
+      <video data-scroll="addHeight"  data-scroll-showCallback="play();" data-scroll-hideCallback="pause();" muted id="DeBrasio" class="video" >
+
+        <source src="voxpop 3 final.mp4" type="video/mp4">
+      </video> 
+
+     <div class="soundButton">
+    <input type="checkbox" name="un-mute" id="un-mute5" class="toggle">
+              <label for="un-mute5" class="unmute"> 
+              <img src="Speaker_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+              </label>
+               <label for="un-mute5" class="mute"> 
+               <img src="Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+               </label>
+      </div>
+</div>
+
+<div class="text_container">
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Antonio Reynoso, New York City councilman and chairman of the council’s sanitation committee, believes residents haven’t been adequately trained how to recycle their organics waste properly. </p>
+</div>
+
+<div class="video_container">
+
+      <video data-scroll="addHeight"  data-scroll-showCallback="play();" data-scroll-hideCallback="pause();" muted id="DeBrasio" class="video" >
+
+        <source src="Soundbite2_Reynoso.mp4" type="video/mp4">
+      </video> 
+
+     <div class="soundButton">
+    <input type="checkbox" name="un-mute" id="un-mute6" class="toggle">
+              <label for="un-mute6" class="unmute"> 
+              <img src="Speaker_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+              </label>
+               <label for="un-mute6" class="mute"> 
+               <img src="Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+               </label>
+      </div>
+</div>
+
+<div class="text_container">
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Even in areas like Williamsburg, which had the fewest 311 complaints about organics in March, the system is not foolproof. </p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Residents we spoke with complained about the smell and the rats it attracted.</p>
+</div>
+
+
+<div class="video_container">
+
+      <video data-scroll="addHeight"  data-scroll-showCallback="play();" data-scroll-hideCallback="pause();" muted id="DeBrasio" class="video" >
+
+        <source src="voxpop 4 final.mp4" type="video/mp4">
+      </video> 
+
+     <div class="soundButton">
+    <input type="checkbox" name="un-mute" id="un-mute7" class="toggle">
+              <label for="un-mute7" class="unmute"> 
+              <img src="Speaker_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+              </label>
+               <label for="un-mute7" class="mute"> 
+               <img src="Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+               </label>
+      </div>
+</div>
+<div class="text_container">
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">The city says it collects the organic waste one to two times per week depending on the neighborhood, which has left some residents confused.</p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">“I feel like they're made to just sit there. I don't even know when they pick them up. I'll just leave it out there for four days -- just hopefully they'll take it,” said Paul Jacobs, a resident of East Williamsburg.  </p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Josephine Santiago has lived in her Sunset Park house for over 40 years, but she never saw a cockroach until she started participating in the organics recycling program around six months ago.</p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Santiago was a willing participant when she began recycling her organic waste, but it didn’t take long for the smell, and the pests attracted by it, to overwhelm her sense of optimism. </p>
+
+      <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">She declared the whole thing “gross” and abandoned the program. She said her longtime neighbors felt the same way.</p>
+
+</div>
+
+<div class="video_container">
+
+      <video data-scroll="addHeight"  data-scroll-showCallback="play();" data-scroll-hideCallback="pause();" muted  class="video" >
+
+        <source src="voxpop 1 final.mp4" type="video/mp4">
+      </video> 
+
+    <div class="soundButton">
+    <input type="checkbox" name="un-mute" id="un-mute2" class="toggle" >
+              <label for="un-mute2" class="unmute"> 
+              <img src="Speaker_Icon.svg" alt="Mute_Icon.svg" title="Mute icon" >
+              </label>
+               <label for="un-mute2" class="mute"> 
+               <img src="Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon" >
+               </label>
+      </div>
+</div>
+
+<div class="text_container">
+   <p  class="headline" data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">The Collection Process</p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Organics recycling isn’t only challenging for many residents; it has also complicated collection for DSNY. Organic waste cannot be contaminated with non-compostable material; so collection trucks have to separately pick up organic waste, paper, trash, metal and plastic.
+     </p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Ana Champeny, director of city studies at the <a href="https://cbcny.org/sites/default/files/media/files/REPORT_ORGANICWASTE_02022016_2.pdf">Citizens Budget Commission</a>, estimates that with the addition of the organics program the city’s sanitation trucks have to drive more miles than before the program was implemented. 
+     </p>
+</div>
+
+<div class="video_container">
+
+      <video data-scroll="addHeight"  data-scroll-showCallback="play();" data-scroll-hideCallback="pause();" muted id="DeBrasio" class="video" >
+
+        <source src="Soundbite3_Champeny.mp4" type="video/mp4">
+      </video> 
+
+     <div class="soundButton">
+    <input type="checkbox" name="un-mute" id="un-mute8" class="toggle">
+              <label for="un-mute8" class="unmute"> 
+              <img src="Speaker_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+              </label>
+               <label for="un-mute8" class="mute"> 
+               <img src="Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+               </label>
+      </div>
+</div>
+
+<div class="text_container">
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">For some routes, the city uses dual-bin trucks that pick up regular trash and organic waste, but they only account for about a <a href="https://www1.nyc.gov/assets/operations/downloads/pdf/fleet_report.pdf">quarter of the trucks on the road daily</a>. 
+     </p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">More sanitation trucks on the road could potentially cause more environmental damage than organics recycling is helping to prevent. “It is absolutely possible to create an environmental harm,” said Benjamin Miller, former director of policy planning for DSNY, where he was the main author of the city’s first solid waste management plan. Miller said that when trucks are going sometimes 100 miles to dump the organic waste, it could become environmentally harmful.
+     </p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">DSNY vehicles already have the <a href="http://www1.nyc.gov/assets/sustainability/downloads/pdf/publications/NYC%20Clean%20Fleet.pdf">highest greenhouse gas emissions</a> of all citywide agencies, according to the Department of Citywide Administrative Services. 
+     </p>
+
+    <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Champeny adds that more trucks and scattered pick-ups is one of the reasons the organics recycling program is so costly. 
+    </p>
+</div>
+
+<div class="video_container">
+
+      <video data-scroll="addHeight"  data-scroll-showCallback="play();" data-scroll-hideCallback="pause();" muted id="DeBrasio" class="video" >
+
+        <source src="Soundbite4_Champeny.mp4" type="video/mp4">
+      </video> 
+
+     <div class="soundButton">
+    <input type="checkbox" name="un-mute" id="un-mute9" class="toggle">
+              <label for="un-mute9" class="unmute"> 
+              <img src="Speaker_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+              </label>
+               <label for="un-mute9" class="mute"> 
+               <img src="Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+               </label>
+      </div>
+</div>
+
+<div class="text_container">
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">The CBC estimates that organics collection costs over <a href="https://cbcny.org/sites/default/files/media/files/REPORT_ORGANICWASTE_02022016_2.pdf">$1,300 per ton</a>, but collection of metal, glass, and plastics costs just over $700 per ton, and trash pickup only $400 per ton.
+     </p>
+
+</div>
+
+<div class="video_container">
+
+      <video data-scroll="addHeight"  data-scroll-showCallback="play();" data-scroll-hideCallback="pause();" muted id="DeBrasio" class="video" >
+
+        <source src="Soundbite5_Champeny.mp4" type="video/mp4">
+      </video> 
+
+     <div class="soundButton">
+    <input type="checkbox" name="un-mute" id="un-mute10" class="toggle">
+              <label for="un-mute10" class="unmute"> 
+              <img src="Speaker_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+              </label>
+               <label for="un-mute10" class="mute"> 
+               <img src="Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+               </label>
+      </div>
+</div>
+
+<div class="text_container">
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Lange, the former director of the recycling program, agrees that costs is a concern. “As a city taxpayer, I’m offended by this program because it is, in my opinion, a total waste of taxpayer money. It’s totally being done for political reasons, not for environmental reasons.”
+     </p>
+
+    <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Once the organic waste is picked up in a collection truck, it is taken to one of the transfer stations in the city. Here the waste is dumped, consolidated, decontaminated, and reloaded onto new trucks for transportation to its final destination. 
+     </p>
+
+</div>
+
+
+<div class="text_container">
+   <p  class="headline" data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">The Recycling Process <p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Dealing with both the amount and variability of New York City’s organic waste is an intricate challenge. Some organic waste is taken to Newtown Creek Wastewater Treatment Plant in North Brooklyn, but large-scale composting sites such as McEnroe Farm, Staten Island’s Fresh Kills and Rikers Island handle most of the processing.
+     </p>
+</div>
+
+<div class="video_container">
+
+      <video data-scroll="addHeight"  data-scroll-showCallback="play();" data-scroll-hideCallback="pause();" muted id="DeBrasio" class="video" >
+
+        <source src="science_video.mp4" type="video/mp4">
+      </video> 
+
+     <div class="soundButton">
+    <input type="checkbox" name="un-mute" id="un-mute11" class="toggle">
+              <label for="un-mute11" class="unmute"> 
+              <img src="Speaker_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+              </label>
+               <label for="un-mute11" class="mute"> 
+               <img src="Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+               </label>
+
+              <script>
+              // var un_mute = $('#SoundToggle'); 
+              // var media = $('video').not("[autoplay='autoplay']");
+              function play(){
+                // document.getElementById("DeBrasio").currentTime=0;
+                this.play();
+
+              }
+              function pause(){
+                this.pause();
+              }
+                
+              $(".toggle").click(function() {
+                 var video = $(this).parent().parent().find('video')[0];
+                 if(video.muted== true){
+                       video.muted= false;           
+                       // alert(video);
+                 }
+                 else{video.muted=true;}
+                });
+              
+ // closest('.video_container')
+               </script> 
+      </div>
+</div>
+
+<div class="text_container">
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">According to the <a href="https://cbcny.org/sites/default/files/media/files/REPORT_ORGANICWASTE_02022016_2.pdf">Citizens’ Budget Commission</a>, if the city were able to recycle organic waste at the same rate as other materials, the increased tonnage, upwards of 500,000, would overwhelm the existing processing sites and even those within 150 miles of Manhattan. And building more capacity inside the city faces a challenge familiar to New Yorkers. There’s very little space. “Unfortunately composting takes up a lot of space and there just isn't a lot of space left in New York for those kinds of things," said Gregory Anderson, Chief of Staff at the DSNY.
+     </p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">In the areas of the city that do have some additional space for expansion, city officials face other familiar challenges.. “You run into the ‘not in my backyard’ reaction. People don't want these things in their neighborhood,” said Norman Steisel, the former sanitation commissioner. “Rather, it gets carted away outside of the city which makes it even more expensive because you have to pay for those transportation costs.”</p>
+
+      <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Steisel estimates that the city would need 10 6-acre sites in New York City to build new anaerobic digestion plants. “And it's just, I think, it's, it's unimaginable, frankly.”</p>
+</div>
+
+<div class="text_container">
+   <p  class="headline" data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Best in class</p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Although New York is struggling to build a functioning organics program, other cities point to some solutions. San Francisco’s program is deemed one of the most efficient in the country, collecting nearly 10 times more organic waste than New York’s.
+     </p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">One big difference between the two programs is incentives. San Francisco’s “pay-as-you-throw” initiative means residents and businesses are charged based on the amount of waste they throw out, and are fined for not correctly separating their recyclables, including organics. Participation in the city’s organics collection program is at 99% according to spokespeople from San Francisco’s Department of the Environment and the city’s waste management partner, Recology.
+     </p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">San Francisco collects 700 tons of organics per day. In 2017, New York only collected an average of 81.4 tons. This amounts to 1.6 pounds per resident in San Francisco and less than 0.05 pounds per resident for New York City. 
+     </p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">The California city has an education program that includes an ongoing compost literacy campaign, door-to-door composting education, composting program setup, and training in multiple languages. The city and Recology also provide residents and businesses with color-coded collection bins, interior sorting containers, signage, and kitchen composting collection pails.
+     </p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Champeny said one benefit of volume-based garbage fees is that they tend to reduce waste generation overall. But if New Yorkers were incentivized to recycle more organics, <a href="https://drive.google.com/file/d/1N8IqhZibsYvlDmBMfRVwT3nWK-8TKOxk/view">experts say</a> the impact on the current infrastructure could lead to a crisis point in two to four years. 
+     </p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">“If in their wildest imagination the Sanitation Department found that significant numbers of people participated and the tonnage went up to 1,000 tons a day, what are they going to do with all the material?” Steisel said. 
+     </p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">
+     Steisel recommends that the city first invests in increasing its organics processing capacity before attempting to increase participation.
+     </p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">
+     Even with the current reality DSNY faces, Miller believes halting the expansion of the organics program will give the city breathing room to put the program on a more solid footing. He hopes the department can figure out capacity and then find better ways to urge and educate residents to collect more of their food scraps. 
+     </p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">
+     Furthermore, as a former city planner for the DSNY, Miller also has various suggestions for how the agency can fix the program in the ensuing months. 
+     </p>
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">
+     “This time could be used to pilot local-scale techniques, such as collection vehicles that are temporarily parked in various places on a rotating basis to receive drop-offs, or submerged containers, which could replace door-to-door pickups to make collection more efficient,” Miller also believes this is a chance for the city to come up with more energy and financially efficient plans going forward. 
+     </p>
+
+
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">
+     I think this should be seen as a positive development,” Miller said. 
+     </p>
+</div>
+
+
+
+
+<div class="text_container">
+   <p  class="headline" data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Organics Recylcing in New York City <p>
+     <p  class="text"  data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Type in any NYC address to find the nearest organic drop off sites  and organics recycling pick-up date.
+     </p>
+     <iframe src="https://tdal.carto.com/viz/249356e9-d6f9-487c-9858-c36d24f63126/embed_map">
+          <p>Your browser does not support iframes.</p>
+     </iframe>
+</div>
+
+<div class="text_container">
+   <p  class="headline" data-scroll="toggle(.fromBottomIn, .fromTopOut); once:true">Now try your hand at beating the city at diverting trash from landfills!<p>
+</div>
+<iframe src="http://eastoned.github.io/Journalism">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+<div class="footer">
+	<div class="footer-content">
+		<div class="title-line">
+        <h4> The Rotten Apple</h4>
+        <img src="logo 2.png" alt="logo">
+        </div>
+		<h5 style="font-weight:100; margin-top:10%; margin-bottom:5%;">A collaborative investigation by NYU Journalism, WNYC and gothamist</h5>
+		<h5 style="font-weight:400; margin-top:2%;margin-bottom:1%;">Reported and Produced by</h5>
+		<h5 style="font-weight:100; margin:0;  line-height:1.5;" ><a href="https://twitter.com/farnoushava">Farnoush Amiri</a>, <a href="https://twitter.com/hannah_beckler">Hannah Beckler</a>, <a href="https://www.till-daldrup.com/">Till Daldrup</a>, <a href="https://www.linkedin.com/in/shiau-jing-karen-ding-27799523/">Karen Ding</a>, <a href="https://twitter.com/hicks_justinm?lang=en">Justin Hicks</a>, <a href="https://www.linkedin.com/in/joy-mckinley-b36301b7">Joy McKinley</a>, <a href="https://twitter.com/olivnelson">Nelson Oliveira</a>, <a href="https://twitter.com/annapazos">Anna Pazos</a>, <a href="https://twitter.com/gonzalodelpeon">Gonzalo del Peon</a>, <a href="https://twitter.com/jessieyuqingshi">Jessie Yuqing Shi</a>, <a href="https://www.linkedin.com/in/tarun-shyam-73a03192/">Tarun Shyam</a>, <a href="https://twitter.com/reneexiaoyuwang">Renee Wang</a>, <a href="https://twitter.com/ae_zahn">Amy Zahn</a></h5>
+		<h5 style="font-weight:400; margin-top:2%;margin-bottom:1%;">Web Designed and Developed by</h5>
+		<h5 style="font-weight:100; margin:0;"><a href="https://www.zhongzhaoqi.com">Nicole Zhaoqi Zhong</a></h5>
+		<h5 style="font-weight:400; margin-top:2%;margin-bottom:1%;">Edited by</h5>
+		<h5 style="font-weight:100; margin:0;"><a href="https://journalism.nyu.edu/about-us/profile/hilke-schellmann/">Hilke Schellmann</a></h5>
+		<h5 style="font-weight:100; font-size:1.5vh; margin-top:2%;margin-bottom:5%; line-height: 1.5; color:#9B9B9B" >Special thanks to Fritzie Andrade, Cedar Attanasio, Jarrard Cole, Jeff Cullen, Greg Emerson, Zoe Fraade-Blanar, Garrett Gardner, Sarah Maslin Nir, Jay Rosen, Cole Rosengren, Andy Rossback, Lam Thuy Vo</h5>
+		<br>
+	</div>
+</div>
+</div>
+</body>
+</html>
